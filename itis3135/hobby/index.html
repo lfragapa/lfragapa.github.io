@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Hobby</title>
 
-    <base href="#what">
-
     <style>
 
         body{
@@ -170,6 +168,9 @@
                     Is there any way to make it simpler
                 </li>
                 <li>
+                    Could you go back to using just a bit of js to have that one section show up on the web loading
+                </li>
+                <li>
                     Various prompts for images, those prompts are under the photos
                 </li>
             </ul>
@@ -179,6 +180,16 @@
     <footer>
         <a href="../louisfragapaneenterprises.com/index.html">Louis Fragapane Enterprises</a>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check if the URL has no hash (or just '#')
+            if (!window.location.hash || window.location.hash === '#') {
+                // Manually set the hash to the desired default section, which triggers the CSS :target rule
+                window.location.hash = '#what';
+            }
+        });
+    </script>
 
 </body>
 </html>
