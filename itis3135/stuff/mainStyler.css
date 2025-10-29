@@ -1,0 +1,21 @@
+p {
+    color: magenta;
+    font-family: papyrus;
+    text-align: center;
+    background-color: #150000;
+}
+
+ul {
+    margin: 10px 2px 200px 520px
+}
+
+img {
+    border-right: 80px dotted rgba(0,255,0, .2);
+    border-top: 15px solid darkcyan;
+    border-left: 45px dashed darkslategray;
+    border-bottom: 20vh solid black
+}
+
+a {
+    font-size: 30px;
+}
