@@ -6,7 +6,7 @@ body{
 }
 
 main {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     max-width: 800px;
 }
@@ -37,4 +37,8 @@ figure{
 
 img{
     width: 45%;
+}
+
+table {
+
 }
