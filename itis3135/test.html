@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction Form || ITIS3135</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        /* Form specific styles - these won't affect the 'result' view */
+        .form-container { max-width: 800px; margin: 0 auto; text-align: left; }
+        .form-section { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #ccc; }
+        label { display: block; font-weight: bold; margin-top: 10px; }
+        input[type="text"], input[type="date"], textarea, select { 
+            width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; 
+        }
+        button { padding: 10px 20px; cursor: pointer; margin-top: 10px; margin-right: 5px; }
+        .course-entry { background: #f4f4f4; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
+        .delete-btn { background-color: #ffb3b3; border: none; margin-top: 5px;}
+    </style>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2 id="page-title">Introduction Form</h2>
+        
+        <div id="form-wrapper" class="form-container">
+            <h3>Please submit the form below.</h3>
+            
+            <form id="introForm">
+                <div class="form-section">
+                    <label>First Name:</label>
+                    <input type="text" id="fname" value="Louis" required>
+                    
+                    <label>Middle Name (Optional):</label>
+                    <input type="text" id="mname" placeholder="Middle Name">
+                    
+                    <label>Last Name:</label>
+                    <input type="text" id="lname" value="Fragapane" required>
+                    
+                    <label>Mascot Adjective:</label>
+                    <input type="text" id="mascot" value="Lazy" required>
+                    
+                    <label>Mascot Animal:</label>
+                    <input type="text" id="animal" value="Llama" required>
+                </div>
+
+                <div class="form-section">
+                    <label>Picture (Defaults to Zoro if empty):</label>
+                    <input type="file" id="introImage" accept="image/*">
+                    <label>Picture Caption:</label>
+                    <input type="text" id="caption" value="Me posing as Zoro from One Piece" required>
+                </div>
+
+                <div class="form-section">
+                    <label>Personal Background:</label>
+                    <textarea id="personalBg" rows="3" required>I was born in Raleigh, NC and moved to Charlotte, NC when I was around 2-3 and have grown up here since.</textarea>
+
+                    <label>Professional Background:</label>
+                    <textarea id="profBg" rows="3" required>I have only had one job and it's my current job and it's at a small restaurant called brightstar.</textarea>
+
+                    <label>Academic Background:</label>
+                    <textarea id="academicBg" rows="3" required>I am a sophomore and my major is Computer Science.</textarea>
+
+                    <label>Primary Computer Platform:</label>
+                    <textarea id="platformBg" rows="3" required>My primary machines for work I use are my MacBook, and my Windows PC, with my primary working location being in my room at my apartment or at the library</textarea>
+                </div>
+
+                <div class="form-section">
+                    <h4>Courses I'm Taking:</h4>
+                    <div id="coursesContainer"></div>
+                    <button type="button" id="addCourseBtn">Add Course</button>
+                </div>
+
+                <div class="form-section">
+                    <label>Quote:</label>
+                    <input type="text" id="quote" value="I'm gonna be King of the Pirates!" required>
+                    <label>Quote Author:</label>
+                    <input type="text" id="author" value="Monkey D. Luffy" required>
+                    
+                    <label>Funny Thing (Optional):</label>
+                    <textarea id="funnyThing"></textarea>
+                    
+                    <label>Something to Share (Optional):</label>
+                    <textarea id="shareThing"></textarea>
+                </div>
+
+                <div class="form-section">
+                    <label>
+                        <input type="checkbox" required checked> I acknowledge that I have read the syllabus.
+                    </label>
+                    <label>Date:</label>
+                    <input type="date" id="date" required>
+                </div>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button" id="clearBtn">Clear</button>
+            </form>
+        </div>
+
+        <div id="resultContainer"></div>
+
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/test.js"></script>
+</body>
+</html>

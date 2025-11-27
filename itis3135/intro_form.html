@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction Form</title>
+    <link rel="stylesheet" href="styles/intro_form.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Introduction Form</h2>
+        <h2>Louis Fragapane || Lazy Llama</h2>
+        <h3>Please fill out the Form</h3>
+        <form>
+            <fieldset>
+                <legend>Personal Info</legend>
+                <div>
+                    <label for="first-name">First Name: </label>
+                    <input type="text" id="first-name" name="first-name" value="Louis" placeholder="First Name" required>
+                </div>
+                <div>
+                    <label for="middle-name">Middle Name (Optional): </label>
+                    <input type="text" id="middle-name" name="middle-name" placeholder="Middle Name">
+                </div>
+                <div>
+                    <label for="nick-name">Nick Name (Optional): </label>
+                    <input type="text" id="nick-name" name="nick-name" placeholder="Nick Name">
+                </div>
+                <div>
+                    <labe for="last-name">Last Name: </label>
+                    <input type="text" id="last-name" name="last-name" value="Fragapane" placeholder="Last Name" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Background Info</legend>
+                <div>
+                    <label for="personalBg">Personal Background: </label>
+                    <textarea id="personalBg" name="personalBg" rows="5" cols="50" placeholder="Things such as hometown or hobbies" required>I was born in Raleigh, NC and moved to Charlotte, NC when I was around 2-3 and have grown up here since.</textarea>
+                </div>
+                <div>
+                    <label for="professionalbg">Professional Background: </label>
+                    <textarea id="professionalbg" name="professionalbg" rows="5" cols="50" placeholder="Any past jobs or professional experience" required>I have only had one job and it's my current job and it's at a small restaurant called brightstar.</textarea>
+                </div>
+                <div>
+                    <label for="academicBg">Academic Background: </label>
+                    <textarea id="academicBg" name="academicBg" rows="5" cols="50" placeholder="What education do you have" required>I am a sophomore and my major is Computer Science.</textarea>
+                </div>
+                <div>
+                    <label for="computerBg">Computer Background: </label>
+                    <textarea id="computerBg" name="computerBg" rows="5" cols="50" placeholder="What are your primary devices and work places" required>My primary machines for work I use are my MacBook, and my Windows PC, with my primary working location being in my room at my apartment or at the library</textarea>
+                </div>
+            </fieldset>
+
+            <fieldset id="course-fieldset">
+                <legend>Courses</legend>
+                <button type="button" id="add-course-btn">Add Course</button>
+            </fieldset>
+            
+            <button type="submit">Submit</button>
+        </form>
+        
+        <!-- <ul>
+            <figure>
+                <img src="images/ZoroPose.jpg" alt="Louis posing as Zoro">
+                <figcaption>Me posing as Zoro from One Piece</figcaption>
+            </figure>
+            <li>
+                <b>Personal Background:</b> I was born in Raleigh, NC and moved to Charlotte, NC when I was around 2-3 and have grown up here since.
+            </li>
+            <li>
+                <b>Professional Background:</b> I have only had one job and it's my current job and it's at a small restaurant called brightstar.
+            </li>
+            <li>
+                <b>Academic Background:</b> I am a sophomore and my major is Computer Science.
+            </li>
+            <li>
+                <b>Primary Computer:</b> My primary machines for work I use are my MacBook, and my Windows PC, with my primary working location being 
+                in my room at my apartment or at the library
+            </li>
+            <li>
+                <b>Courses I'm Taking, & Why:</b>
+                <ul>
+                    <li>
+                        <b>ITIS-3135  Front-End Web Application Development:</b> Seemed like an interesting class and I wanted to find out more so I registered for it.
+                    </li>
+                    <li>
+                        <b>ITSC-2175 Logic and Algorithms:</b> Required for Major.
+                    </li>
+                    <li>
+                        <b>ITSC-3155 Software Engineering:</b> Required for major.
+                    </li>
+                    <li>
+                        <b>STAT-2122 Intro to Probability and Statistics:</b> Required for my major and also I enjoy stats.
+                    </li>
+                    <li>    
+                        <b>MUSC-1113 Symphonic Band:</b> I played in my band in my HS for years and I took a break from it last year but I want to get back into it.
+                    </li>
+                    <li>
+                        <b>MUSC-1512 Music in U.S. Communities:</b> I had a class with the same professor last semester and I really enjoyed it so I took another class 
+                        with him to check off another one of my themes classes.
+                    </li>
+                </ul>
+            </li>
+        </ul> -->
+
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="scripts/introduction.js"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
