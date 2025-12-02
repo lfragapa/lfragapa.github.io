@@ -58,19 +58,15 @@ input {
     display: inline;
 }
 
-/* Rule Overrides For Laptops / Small Screens */
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     body {
         background-color: #ffe0e1;
-        /* Slightly lighter background for laptops */
     }
 }
 
-/* Rule Overrides For Tablet Devices */
 @media screen and (min-width: 601px) and (max-width: 980px) {
     body {
         background-color: #e6f7ff;
-        /* Light blue for tablets */
     }
 
     main {
@@ -78,11 +74,9 @@ input {
     }
 }
 
-/* Rule Overrides For Mobile Devices */
 @media screen and (min-width: 370px) and (max-width: 600px) {
     body {
         background-color: #f0f0f0;
-        /* Light gray for mobile */
     }
 
     main {
@@ -92,6 +86,5 @@ input {
 
     img {
         width: 90%;
-        /* Larger images on mobile */
     }
 }
