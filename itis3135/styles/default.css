@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #FFC2C3;
     text-align: center;
     color: #594136;
@@ -16,26 +16,26 @@ main p {
     margin: 5%;
 }
 
-a{
+a {
     color: #52718E;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: #A4B8CB;
     text-decoration: line;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
-figure{
+figure {
     text-align: center;
     font-style: italic;
 }
 
-img{
+img {
     width: 45%;
 }
 
@@ -56,4 +56,42 @@ input {
     width: auto;
     outline: none;
     display: inline;
+}
+
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+    body {
+        background-color: #ffe0e1;
+        /* Slightly lighter background for laptops */
+    }
+}
+
+/* Rule Overrides For Tablet Devices */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    body {
+        background-color: #e6f7ff;
+        /* Light blue for tablets */
+    }
+
+    main {
+        width: 95%;
+    }
+}
+
+/* Rule Overrides For Mobile Devices */
+@media screen and (min-width: 370px) and (max-width: 600px) {
+    body {
+        background-color: #f0f0f0;
+        /* Light gray for mobile */
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    img {
+        width: 90%;
+        /* Larger images on mobile */
+    }
 }
