@@ -58,6 +58,25 @@ input {
     display: inline;
 }
 
+blockquote {
+    display: flex;
+    padding: 0px;
+    margin: 0;
+    height: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+blockquote p {
+    margin: 0;
+    padding: 0;
+}
+
+blockquote:last-child {
+    margin-bottom: 15px;
+}
+
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     body {
         background-color: #ffe0e1;
