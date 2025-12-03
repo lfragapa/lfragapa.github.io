@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louis Fragapane's Lazy Llama || Introduction Form</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Introduction Form</h2>
+        <h3>Please submit the form below.</h3>
+        <form id="intro-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="first-name">First Name: </label>
+                <input type="text" id="first-name" name="first-name" value="Louis" required
+                    placeholder="First Name"><br>
+
+                <label for="middle-name">Middle Name (optional): </label>
+                <input type="text" id="middle-name" name="middle-name" placeholder="Middle Name"><br>
+
+                <label for="nickname">Nickname/Preferred Name (optional): </label>
+                <input type="text" id="nickname" name="nickname" placeholder="Nickname"><br>
+
+                <label for="last-name">Last Name: </label>
+                <input type="text" id="last-name" name="last-name" value="Fragapane" required
+                    placeholder="Last Name"><br>
+
+                <label for="mascot-adjective">Mascot Adjective: </label>
+                <input type="text" id="mascot-adjective" name="mascot-adjective" value="Lazy" required
+                    placeholder="Mascot Adjective"><br>
+
+                <label for="mascot-animal">Mascot Animal: </label>
+                <input type="text" id="mascot-animal" name="mascot-animal" value="Llama" required
+                    placeholder="Mascot Animal"><br>
+
+                <label for="divider">Divider: </label>
+                <input type="text" id="divider" name="divider" value="||" required placeholder="Divider"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Image & Caption</legend>
+                <label for="image-upload">Picture: </label>
+                <input type="file" id="image-upload" name="image-upload" accept="image/*"><br>
+                <input type="hidden" id="default-image" value="images/ZoroPose.jpg">
+
+                <label for="image-caption">Picture Caption: </label>
+                <input type="text" id="image-caption" name="image-caption" value="Me posing as Zoro from One Piece"
+                    required placeholder="Caption"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Background Information</legend>
+                <label for="personal-background">Personal Background: </label>
+                <textarea id="personal-background" name="personal-background" required
+                    placeholder="Personal Background">I was born in Raleigh, NC and moved to Charlotte, NC when I was around 2-3 and have grown up here since.</textarea><br>
+
+                <label for="professional-background">Professional Background: </label>
+                <textarea id="professional-background" name="professional-background" required
+                    placeholder="Professional Background">I have only had one job and it's my current job and it's at a small restaurant called brightstar.</textarea><br>
+
+                <label for="academic-background">Academic Background: </label>
+                <textarea id="academic-background" name="academic-background" required
+                    placeholder="Academic Background">I am a sophomore and my major is Computer Science.</textarea><br>
+
+                <label for="primary-computer">Primary Computer: </label>
+                <textarea id="primary-computer" name="primary-computer" required
+                    placeholder="Primary Computer">My primary machines for work I use are my MacBook, and my Windows PC, with my primary working location being in my room at my apartment or at the library</textarea><br>
+
+                <label for="quote">Quote: </label>
+                <input type="text" id="quote" name="quote" placeholder="Quote"><br>
+
+                <label for="quote-author">Quote Author: </label>
+                <input type="text" id="quote-author" name="quote-author" placeholder="Quote Author"><br>
+
+                <label for="funny-thing">Funny Thing (optional): </label>
+                <textarea id="funny-thing" name="funny-thing" placeholder="Funny Thing"></textarea><br>
+
+                <label for="share-thing">Something I would like to share (optional): </label>
+                <textarea id="share-thing" name="share-thing" placeholder="Something to share"></textarea><br>
+            </fieldset>
+
+            <fieldset id="courses-fieldset">
+                <legend>Courses</legend>
+                <div id="course-list">
+                    <div class="course-entry">
+                        <label>Course Department: <input type="text" name="course-dept[]" value="ITIS" required
+                                placeholder="Dept"></label>
+                        <label>Course Number: <input type="text" name="course-num[]" value="3135" required
+                                placeholder="Num"></label>
+                        <label>Course Name: <input type="text" name="course-name[]"
+                                value="Front-End Web Application Development" required placeholder="Name"></label>
+                        <label>Reason: <input type="text" name="course-reason[]"
+                                value="Seemed like an interesting class and I wanted to find out more so I registered for it."
+                                required placeholder="Reason"></label>
+                        <button type="button" class="delete-course-btn">Delete</button>
+                    </div>
+                    <div class="course-entry">
+                        <label>Course Department: <input type="text" name="course-dept[]" value="ITSC" required
+                                placeholder="Dept"></label>
+                        <label>Course Number: <input type="text" name="course-num[]" value="2175" required
+                                placeholder="Num"></label>
+                        <label>Course Name: <input type="text" name="course-name[]" value="Logic and Algorithms"
+                                required placeholder="Name"></label>
+                        <label>Reason: <input type="text" name="course-reason[]" value="Required for Major." required
+                                placeholder="Reason"></label>
+                        <button type="button" class="delete-course-btn">Delete</button>
+                    </div>
+                    <div class="course-entry">
+                        <label>Course Department: <input type="text" name="course-dept[]" value="ITSC" required
+                                placeholder="Dept"></label>
+                        <label>Course Number: <input type="text" name="course-num[]" value="3155" required
+                                placeholder="Num"></label>
+                        <label>Course Name: <input type="text" name="course-name[]" value="Software Engineering"
+                                required placeholder="Name"></label>
+                        <label>Reason: <input type="text" name="course-reason[]" value="Required for major." required
+                                placeholder="Reason"></label>
+                        <button type="button" class="delete-course-btn">Delete</button>
+                    </div>
+                    <div class="course-entry">
+                        <label>Course Department: <input type="text" name="course-dept[]" value="STAT" required
+                                placeholder="Dept"></label>
+                        <label>Course Number: <input type="text" name="course-num[]" value="2122" required
+                                placeholder="Num"></label>
+                        <label>Course Name: <input type="text" name="course-name[]"
+                                value="Intro to Probability and Statistics" required placeholder="Name"></label>
+                        <label>Reason: <input type="text" name="course-reason[]"
+                                value="Required for my major and also I enjoy stats." required
+                                placeholder="Reason"></label>
+                        <button type="button" class="delete-course-btn">Delete</button>
+                    </div>
+                    <div class="course-entry">
+                        <label>Course Department: <input type="text" name="course-dept[]" value="MUSC" required
+                                placeholder="Dept"></label>
+                        <label>Course Number: <input type="text" name="course-num[]" value="1113" required
+                                placeholder="Num"></label>
+                        <label>Course Name: <input type="text" name="course-name[]" value="Symphonic Band" required
+                                placeholder="Name"></label>
+                        <label>Reason: <input type="text" name="course-reason[]"
+                                value="I played in my band in my HS for years and I took a break from it last year but I want to get back into it."
+                                required placeholder="Reason"></label>
+                        <button type="button" class="delete-course-btn">Delete</button>
+                    </div>
+                    <div class="course-entry">
+                        <label>Course Department: <input type="text" name="course-dept[]" value="MUSC" required
+                                placeholder="Dept"></label>
+                        <label>Course Number: <input type="text" name="course-num[]" value="1512" required
+                                placeholder="Num"></label>
+                        <label>Course Name: <input type="text" name="course-name[]" value="Music in U.S. Communities"
+                                required placeholder="Name"></label>
+                        <label>Reason: <input type="text" name="course-reason[]"
+                                value="I had a class with the same professor last semester and I really enjoyed it so I took another class with him to check off another one of my themes classes."
+                                required placeholder="Reason"></label>
+                        <button type="button" class="delete-course-btn">Delete</button>
+                    </div>
+                </div>
+                <button type="button" id="add-course-btn">Add Course</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Links</legend>
+                <label>Link 1: <input type="url" name="links[]" value="https://webpages.charlotte.edu/lfragapa/"
+                        placeholder="https://linkedin.com" required></label><br>
+                <label>Link 2: <input type="url" name="links[]" value="https://github.com/lfragapa/lfragapa.github.io"
+                        placeholder="Link 2" required></label><br>
+                <label>Link 3: <input type="url" name="links[]" value="https://lfragapa.github.io" placeholder="Link 3"
+                        required></label><br>
+                <label>Link 4: <input type="url" name="links[]" value="https://www.freecodecamp.org/louis_fragapane"
+                        placeholder="Link 4" required></label><br>
+                <label>Link 5: <input type="url" name="links[]" value="https://www.codecademy.com/profiles/lfragapa"
+                        placeholder="Link 5" required></label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Acknowledgment</legend>
+                <label for="acknowledgment">Acknowledgment Statement: </label>
+                <input type="checkbox" id="acknowledgment" name="acknowledgment" required>
+                <span>I acknowledge that I have read and agree to the terms.</span><br>
+
+                <label for="ack-date">Date: </label>
+                <input type="date" id="ack-date" name="ack-date" required><br>
+            </fieldset>
+
+            <div class="form-controls">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button" id="clear-btn">Clear</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/introduction.js"></script>
+</body>
+
+</html>
