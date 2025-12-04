@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Sunset Moments",
+        "description": "A beautiful sunset capturing the warmth of the evening.",
+        "url": "project/images/sunset.jpg",
+        "thumb": "project/images/sunset.jpg"
+    },
+    {
+        "title": "Nature's Foliage",
+        "description": "Detailed shot of vibrant green foliage.",
+        "url": "project/images/foliage.jpg",
+        "thumb": "project/images/foliage.jpg"
+    },
+    {
+        "title": "Ocean Life",
+        "description": "A glimpse into the underwater world.",
+        "url": "project/images/shark.jpg",
+        "thumb": "project/images/shark.jpg"
+    }
+]

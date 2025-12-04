@@ -22,7 +22,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body main, body footer {
+body main,
+body footer {
     margin-top: 15px;
 }
 
@@ -48,6 +49,7 @@ header a {
     text-decoration: none;
     color: var(--header-text-color);
     font-weight: bold;
+    padding-bottom: 10px;
 }
 
 
@@ -62,8 +64,13 @@ main {
     border-radius: 25px;
 }
 
-main > * {
+main>* {
     margin: 25px 20px;
+}
+
+#madisonImage {
+    width: 400px;
+    height: auto;
 }
 
 footer {
@@ -82,12 +89,13 @@ footer {
     gap: 12px;
     align-items: center;
 }
+
 .gallery-grid img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Work experience mini-gallery */
@@ -96,23 +104,28 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 12px;
 }
+
 .exp-item {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7);
     padding: 10px;
     text-align: center;
 }
+
 .exp-item img {
     width: 100%;
     height: auto;
     display: block;
 }
+
 .exp-desc {
-    display: none; /* hidden by default - will fade in */
+    display: none;
+    /* hidden by default - will fade in */
     padding: 8px;
 }
+
 .exp-item .cta {
     margin-top: 8px;
 }
@@ -121,20 +134,27 @@ footer {
     display: block;
     margin-top: 10px;
 }
-.booking-form input, .booking-form textarea, .booking-form select {
+
+.booking-form input,
+.booking-form textarea,
+.booking-form select {
     width: 100%;
     padding: 8px;
     margin-top: 6px;
     border-radius: 6px;
     border: 1px solid #ccc;
 }
-.booking-form select, select {
+
+.booking-form select,
+select {
     appearance: none;
     -webkit-appearance: none;
     padding-right: 24px;
 }
-.service-form label, .service-form select {
-    display:block;
+
+.service-form label,
+.service-form select {
+    display: block;
 }
 
 .cta {

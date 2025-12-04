@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madison Witham</title>
     <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/slideshow.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <div data-include="components/header.html"></div>
     </header>
     <main>
         <h2>Madison Witham</h2>
-        <figure>
-            <img src="" alt="">
-            <figcaption>Image of madison</figcaption>
-        </figure>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus dapibus sem, 
-            et sagittis turpis tristique id. Integer dolor dui, laoreet non odio a, congue gravida risus. 
-            Sed tempus metus ut libero lobortis ullamcorper. Maecenas massa arcu, vulputate vitae rutrum
-            tincidunt, molestie id mi. Fusce vitae metus eu odio lobortis pellentesque. Duis consequat 
-            rutrum nisi, sed ullamcorper orci faucibus sit amet. Vivamus ullamcorper tellus in elit malesuada 
-            consequat. Vivamus at consectetur lectus. Ut fermentum, mauris ac mollis pulvinar, arcu nisi mattis 
-            ligula, ac varius massa mauris in lorem. Nulla malesuada pulvinar tempor.
+            Welcome to Madison's Photography! I specialize in capturing the beauty of nature, the warmth of family, and
+            the excitement of your special events.
+            With years of experience and a passion for storytelling through the lens, I am dedicated to providing you
+            with stunning images that you will cherish forever.
         </p>
+        <p>
+            Explore my portfolio to see my latest work, or contact me to book your session today!
+        </p>
+
+        <section id="featured-work">
+            <h3>Featured Work</h3>
+            <div id="slideshow">
+                <img src="images/foliage.jpg" alt="Foliage" class="active">
+                <img src="images/shark.jpg" alt="Shark">
+                <img src="images/sunset.jpg" alt="Sunset">
+            </div>
+        </section>
 
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
 </body>
+
 </html>
