@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Golden Hour Family",
+    "url": "https://via.placeholder.com/600x400?text=Family+Portrait",
+    "thumb": "https://via.placeholder.com/300x200?text=Family",
+    "description": "A warm family portrait taken at golden hour.",
+    "category": "Portraits"
+  },
+  {
+    "id": 2,
+    "title": "Wedding First Dance",
+    "url": "https://via.placeholder.com/600x400?text=Wedding+First+Dance",
+    "thumb": "https://via.placeholder.com/300x200?text=Wedding",
+    "description": "Emotive scene captured during a couple's first dance.",
+    "category": "Weddings"
+  },
+  {
+    "id": 3,
+    "title": "High School Senior",
+    "url": "https://via.placeholder.com/600x400?text=Senior+Portrait",
+    "thumb": "https://via.placeholder.com/300x200?text=Senior",
+    "description": "Senior portrait with dramatic lighting.",
+    "category": "Portraits"
+  },
+  {
+    "id": 4,
+    "title": "Local Market",
+    "url": "https://via.placeholder.com/600x400?text=Market",
+    "thumb": "https://via.placeholder.com/300x200?text=Market",
+    "description": "A vibrant scene from the city market.",
+    "category": "Events"
+  },
+  {
+    "id": 5,
+    "title": "Engagement Shoot",
+    "url": "https://via.placeholder.com/600x400?text=Engagement",
+    "thumb": "https://via.placeholder.com/300x200?text=Engagement",
+    "description": "Couple portrait with scenic background.",
+    "category": "Weddings"
+  }
+]

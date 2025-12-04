@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Overview - Madison's Photography</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <!-- jQuery and jQuery UI for interactive widgets -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Project Overview</h2>
+
+        <section>
+            <h3>Client Information</h3>
+            <ul>
+                <li><strong>Name:</strong> Madison Witham</li>
+                <li><strong>Organization:</strong> Madison's Photography</li>
+                <li><strong>Email:</strong> <em>madison.photography@example.com</em> (placeholder)</li>
+                <li><strong>Phone:</strong> <em>555-010-1234</em> (placeholder)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Project Goal & Purpose</h3>
+            <p>
+                Create a professional portfolio and booking web application for Madison's Photography that allows prospective customers to review services, view a gallery of sample work, and request bookings via a client-side booking form. This overview explains the requirements, content categories, user personas, and the interactive features planned for the site.
+            </p>
+        </section>
+
+        <section>
+            <h3>Users & Personas</h3>
+            <ol>
+                <li><strong>Clients:</strong> Individuals or families seeking portrait or event photography (e.g., family sessions, senior portraits).</li>
+                <li><strong>Couples:</strong> Brides, grooms, and their families planning wedding photography.</li>
+                <li><strong>Local organizations:</strong> Community groups or small businesses that need event or promotional photography.</li>
+                <li><strong>Friends/Family:</strong> Support and referrals; may share the portfolio on social media.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Content Categories</h3>
+            <ul>
+                <li>About Madison — experience, biography, and approach.</li>
+                <li>Services — packages, pricing, and sample timelines.</li>
+                <li>Portfolio/Gallery — curated images for portraits, weddings, events.</li>
+                <li>Booking & Contact — forms to request a quote or a booking.</li>
+                <li>Testimonials & Work Experience — samples from past jobs and client reviews.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Planned Interactivity & Dynamic Functionality</h3>
+            <p>My site uses JavaScript, jQuery, and jQuery UI to create a dynamic and interactive user experience without requiring a server-side backend (read-only operations only):</p>
+            <ul>
+                <li><strong>AJAX-loaded gallery</strong> — images and metadata are read from a JSON file (`data/gallery.json`). This showcases Madison's work and allows gallery updates without code edits to the HTML.</li>
+                <li><strong>jQuery UI Accordion</strong> — used on the 'Services' descriptions to collapse/expand service details and pricing.</li>
+                <li><strong>jQuery UI Datepicker</strong> — included in the booking form to select event dates quickly and accurately.</li>
+                <li><strong>jQuery UI Dialogs</strong> — used to display full-size images in a modal and to show booking confirmations or validation errors.</li>
+                <li><strong>Form validation</strong> — a client-side booking form validates required fields; submission is simulated and displayed in a confirmation dialog (no server-side CRUD).</li>
+            </ul>
+
+            <p><strong>Where these appear:</strong></p>
+            <ul>
+                <li>Gallery: This page (`project_overview.html`) includes the gallery (interactive thumbnails, modal viewer).</li>
+                <li>Booking & Contact: The contact and booking forms are accessible on `contact_me.html` and use date picker and client-side validation — <a href="contact_me.html">Go to Contact</a>.</li>
+                <li>Services: The Services page uses an accordion for the list of packages and details.</li>
+            </ul>
+
+            <p><strong>Examples of inspiration:</strong></p>
+            <ul>
+                <li>Photo galleries and modals like those on typical portfolio websites such as Squarespace or Adobe Portfolio (visual inspiration).</li>
+                <li>Booking forms with date pickers like event photographer websites and appointment booking widgets.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Portfolio Gallery (AJAX-loaded)</h3>
+            <div id="gallery-grid" class="gallery-grid">
+                <p>Loading gallery...</p>
+            </div>
+            <div id="gallery-dialog" style="display:none;"></div>
+        </section>
+
+        <!-- Services demo removed per request. Services and interactivity are maintained on Services page. -->
+
+        <!-- Booking Request Form moved to Contact page per request. -->
+        <!-- booking request form removed from project overview -- moved to contact_me.html -->
+
+        <section>
+            <h3>Accessibility & Performance Notes</h3>
+            <p>
+                The site uses semantic HTML, accessible form labels, and clear alternative text for images loaded from the JSON gallery. The gallery uses optimized thumbnails for faster page loads and only loads full images when requested by the user via the modal dialog.
+            </p>
+        </section>
+
+        <section>
+            <h3>Project Deliverables</h3>
+            <ul>
+                <li>Five or more pages integrated with consistent header and footer components</li>
+                <li>AJAX-loaded gallery and client-side booking form</li>
+                <li>jQuery UI widgets (accordion, datepicker, dialogs)</li>
+                <li>Documentation on site structure, users, and content categories</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/project_overview.js"></script>
+</body>
+</html>

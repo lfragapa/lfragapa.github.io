@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madison Witham || Services</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Services</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus dapibus sem, 
+            et sagittis turpis tristique id. Integer dolor dui, laoreet non odio a, congue gravida risus. 
+            Sed tempus metus ut libero lobortis ullamcorper. Maecenas massa arcu, vulputate vitae rutrum
+            tincidunt, molestie id mi. Fusce vitae metus eu odio lobortis pellentesque. Duis consequat 
+            rutrum nisi, sed ullamcorper orci faucibus sit amet. Vivamus ullamcorper tellus in elit malesuada 
+            consequat. Vivamus at consectetur lectus. Ut fermentum, mauris ac mollis pulvinar, arcu nisi mattis 
+            ligula, ac varius massa mauris in lorem. Nulla malesuada pulvinar tempor.
+        </p>
+        
+        <div id="service-accordion">
+            <h4>Portrait Sessions (Lifestyle)</h4>
+            <div>
+                <p>1-hour session, 20 edited images, online gallery delivery. Perfect for families and seniors.</p>
+            </div>
+            <h4>Event Photography (Weddings, Parties)</h4>
+            <div>
+                <p>Full event coverage, multiple photographers available, customizable packages.</p>
+            </div>
+            <h4>Commercial & Branding</h4>
+            <div>
+                <p>Business headshots, promotional images, and small business marketing packages.</p>
+            </div>
+        </div>
+        
+        <section>
+            <h3>Choose Your Service (sample dropdown menus)</h3>
+            <form id="serviceSelector">
+                <label for="serviceType">Service Type</label>
+                <select id="serviceType" name="serviceType">
+                    <option value="portrait">Portrait Session</option>
+                    <option value="wedding">Wedding / Event</option>
+                    <option value="commercial">Commercial / Branding</option>
+                </select>
+                <label for="packageSelect">Package</label>
+                <select id="packageSelect" name="packageSelect">
+                    <option value="basic">Basic</option>
+                    <option value="standard">Standard</option>
+                    <option value="premium">Premium</option>
+                </select>
+                <label for="addOns">Add-Ons</label>
+                <select id="addOns" name="addOns">
+                    <option value="prints">Print Package</option>
+                    <option value="album">Wedding Album</option>
+                    <option value="extraHours">Extra Hours</option>
+                </select>
+            </form>
+            <div id="serviceSummary" style="margin-top: 12px; padding: 10px; background: rgba(255,255,255,0.85); border-radius: 8px;">
+                <p>Select a service and package to see a quick summary.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script>
+        $(function() {
+            $("#service-accordion").accordion({ heightStyle: 'content', collapsible: true });
+
+            function updateSummary() {
+                const service = $('#serviceType').val();
+                const pkg = $('#packageSelect').val();
+                const addOn = $('#addOns').val();
+                $('#serviceSummary').html(`<strong>${service}</strong> - <em>${pkg}</em> with add-on: ${addOn}`);
+            }
+            $('#serviceType, #packageSelect, #addOns').on('change', updateSummary);
+            updateSummary();
+        });
+    </script>
+</body>
+</html>

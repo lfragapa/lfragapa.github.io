@@ -1,0 +1,148 @@
+:root {
+    --header-bg-color: rgb(236, 161, 173);
+    --header-text-color: rgb(117, 107, 168);
+    --main-bg-color: rgba(220, 196, 227, 0.84);
+    --main-text-color: rgb(192, 109, 109);
+    --footer-bg-color: rgb(236, 161, 173);
+    --footer-text-color: rgb(117, 107, 168);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(245, 204, 211);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body main, body footer {
+    margin-top: 15px;
+}
+
+body header {
+    margin-top: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    text-align: center;
+    border-radius: 25px;
+    height: 15vh;
+    width: 90vw;
+    max-width: 900px;
+    padding-top: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--header-text-color);
+    font-weight: bold;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 900px;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    border-radius: 25px;
+}
+
+main > * {
+    margin: 25px 20px;
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    border-radius: 25px;
+    text-align: center;
+    width: 90vw;
+    max-width: 900px;
+}
+
+/* Gallery and project overview specific styles */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+    align-items: center;
+}
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Work experience mini-gallery */
+.exp-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+}
+.exp-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.7);
+    padding: 10px;
+    text-align: center;
+}
+.exp-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.exp-desc {
+    display: none; /* hidden by default - will fade in */
+    padding: 8px;
+}
+.exp-item .cta {
+    margin-top: 8px;
+}
+
+.booking-form label {
+    display: block;
+    margin-top: 10px;
+}
+.booking-form input, .booking-form textarea, .booking-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+.booking-form select, select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 24px;
+}
+.service-form label, .service-form select {
+    display:block;
+}
+
+.cta {
+    display: inline-block;
+    background-color: var(--header-text-color);
+    color: white;
+    padding: 8px 12px;
+    margin-top: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+}
