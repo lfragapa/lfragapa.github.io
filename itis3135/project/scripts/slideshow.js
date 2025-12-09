@@ -8,6 +8,6 @@ $(document).ready(function () {
             slides.eq(currentSlide).removeClass('active');
             currentSlide = (currentSlide + 1) % totalSlides;
             slides.eq(currentSlide).addClass('active');
-        }, 5000); // Change slide every 5 seconds
+        }, 5000);
     }
 });

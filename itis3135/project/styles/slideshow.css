@@ -1,4 +1,3 @@
-/* Slideshow Styles */
 #slideshow {
     position: relative;
     max-width: 600px;
@@ -21,4 +20,4 @@
 
 #slideshow img.active {
     opacity: 1;
-}
+}       

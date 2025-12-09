@@ -1,4 +1,3 @@
-/* contact.js - handles booking request form interaction (date picker, validation, simulated submit) */
 $(function() {
     $("#eventDate").datepicker({ minDate: 0, dateFormat: 'yy-mm-dd' });
 
